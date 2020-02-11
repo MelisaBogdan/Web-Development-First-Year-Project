@@ -1,0 +1,28 @@
+﻿	* {
+    padding: 0;
+    margin: 0;
+	font-size: 100%;
+    vertical-align: baseline;
+	font: inherit;
+	line-height: 1;
+	border: 0;
+	list-style: none;
+	}
+
+.img{
+		display: inline-block;
+}
+
+.footer{
+		display: block;
+		}
+.body{
+		display: block;
+		margin: 8px;
+		}
+
+.a:link {
+color: black;
+text-decoration: underline;
+cursor: auto;
+}
