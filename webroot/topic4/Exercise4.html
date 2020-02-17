@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p class="h">Shirt Order Form</p><br>
+<link rel="stylesheet" type="text/css" href="StyleSheet4.css">
+<! -- <link rel="stylesheet" type="text/css" href="resetForm.css"> -->
+
+<form method="POST" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+
+<div>
+		<section>
+  <label><b>Shirt Size</b></label>
+  <br>
+
+  <select name="SHIRT SIZE">
+  <optgroup label="Small Sizes">
+    <option>XS</option>
+    <option>S</option>
+	<option>M</option>
+  </optgroup>
+  <optgroup label="Big Sizes">
+    <option>L</option>
+    <option>XL</option>
+  </optgroup>
+</select>
+
+	<br><br><label><b>Sleeves</b></label><br>	
+	<input type="radio" name="Sleeve" value="short" checked>Short <br>
+	<input type="radio" name="Sleeve" value="long">Long<br><br>
+
+	<label><b>Choose Shirt Colour</b></label><br>
+	<input type="color" name="Color Choice"><br><br>
+
+	<label><b>Date Requested</b></label><br>
+	<input type="date">
+	   </section>
+  
+  
+		<section>
+  <label for="email"><b>Email Address</b></label><br>
+  <input type="text" placeholder="Write here" id="email" name="email" ><br><br>
+
+  <label for="telephone"><b>Telephone Number</b></label><br>
+  <input type="text" placeholder="Write here" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="telephone" >
+  <label><italic>Example:+44-207-882-1234</italic></label>
+		</section>
+  <br>
+  <br>
+		<nav>
+  <label for="address"><b>Address</b></label><br>
+  <input type="text" placeholder="Write here" id="address" name="address" ><br><br>
+
+  <label for="city"><b>City</b></label><br>
+  <select name="city">
+    <option>Choose a city</option>
+    <option>Kent</option>
+	<option>Glasgow</option>
+    <option>Manchester</option>
+    <option>London</option>
+</select>
+
+<br><br>
+  <label for="postcode"><b>Postcode</b></label><br>
+  <input type="text" placeholder="Write here" id="postcode" name="postcode" ><br><br>
+	</nav>
+  <br>
+
+		<article>
+  <label for="accept">Please keep me informed about future shirt designs</label>
+  <input type="checkbox" id="accept" name="accept" > <br><br>
+  <br><br>
+  <input type="submit" class="button" value="Submit">
+  <input type="reset" class="button" value="reset">
+  <br><br>
+		</article>
+</div>
+</form> 
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿.h{
+	font-family: bold;
+	color: white;
+	background-color:red;
+	font-size:  30pt;
+	height:80px;
+	text-align: center;
+	margin-bottom: 0.3em;
+	
+	}
+	html{
+		margin-top:0;
+	}
+h1{
+	font: bold;
+	text-align:centre;
+	
+}
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+td {
+padding: 5px;
+border-spacing: 50px;
+
+}
+th {
+padding: 8px;
+}
+
+tr:nth-of-type(1) {
+  background-color: #dddddd;
+}
+td, th {
+  border: 3px solid #dddddd;  
+  text-align: center;
+}
+img{
+	width:260px;
+	height:300px;
+}
+
+img.rounded-corners {
+
+  border-radius: 30px;
+
+}

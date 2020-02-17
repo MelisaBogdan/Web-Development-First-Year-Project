@@ -1,0 +1,58 @@
+﻿.h{
+	font-family: bold;
+	color: white;
+	background-color:#2a8000;
+	font-size:  20pt;
+	height:60px;
+	text-align: center;
+	margin-bottom: 0.3em;
+	width:820px;
+	margin-left: 15em;
+	}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+div {
+  background-color: #bbff99;
+  width: 800px;
+  border: 5px solid #44cc00;
+  padding: 50px;
+  margin-left:350px;
+  margin-top: -50px;
+}
+
+article{
+	background-color: white;
+	width: 880px;
+	margin-left:-40px;
+    margin-top: 0.3em;
+}
+
+section{
+  background-color: #bbff99;
+  width: 770px;
+  border: 5px solid #44cc00;
+  padding: 50px;
+  margin-left:-40px;
+  margin-top: 0.3em;
+}
+nav{
+	background-color: #bbff99;
+  width: 770px;
+  border: 5px solid #44cc00;
+  padding: 50px;
+  margin-left:-40px;
+  margin-top: -2em;
+}

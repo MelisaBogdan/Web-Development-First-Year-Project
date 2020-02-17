@@ -1,0 +1,14 @@
+/* general text formatting */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+}
+
+.box {
+   border: 1pt solid green;
+   background-color: #e5ffd8;
+   padding: 0.5em;
+   margin-bottom: 0.4em;
+   border-radius: 5px;
+}
