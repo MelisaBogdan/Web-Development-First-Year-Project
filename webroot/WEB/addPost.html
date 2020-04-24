@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+
+<html>
+
+<head>
+	<title>Add entry - My Blog</title>
+	<style type="text/css">
+
+body {
+	background-color: #5F9EA0; 
+}
+
+html {
+	font-family:  Geneva;
+}
+
+h1 {
+	color: black;
+	font-size: 40px;
+	text-align: center;
+}
+
+#wrapper {
+	position: center;
+	width: 100%;
+	top: 50%;
+	margin-top: 50px; 
+}
+
+
+#pagetitle {
+	color:#483D8B;
+	font-size: 70px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#titlebox {
+	width: 200px;
+	height: 50px;
+	margin-bottom:50px;
+}
+
+#bodybox {
+	width: 400px;
+	height: 200px;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!-- First table is for title and subtitle -->
+
+<table >
+
+	<tr>
+	<td>
+		<div id="pagetitle">Welcome to my blog!</div></td>
+		</tr>
+		<tr>
+	<td>
+		<p>
+			<b> Write inside the boxes. Don't be shy, open uo your heart and write!</b>
+		</p>
+	</td>
+	</tr>
+</table>
+
+
+<table>
+	<form id="formentry" method="post" action="addEntry.php">
+		<tr>
+		<td>Title</td>
+		<td>
+		<input type="text" name="title"  id="title" placeholder="TYPE HERE" size="124">
+		</td>
+		</tr>
+		<tr>
+		<td>Body</td>
+		<td>
+		<textarea name="text" cols= "100" rows="25" placeholder="WRITE YOUR BLOG HERE" id="message"></textarea>
+		</td
+		</tr>
+		<td><td> <input type="submit" value="ADD POST" name="Submit">
+		<input type="button" name="clear" value="Clear" onclick="clearAll()">
+		</td></td>
+	</form>
+
+</table>
+
+
+<script>
+// this function clears out everything inside the text and title box
+function clearAll() {
+	var yesno=confirm("Do you want to clear everything?");
+	if(yesno==true) {
+		document.getElementById("title").value = "";
+		document.getElementById("message").value = "";
+     }
+
+}
+ </script>
+
+</body>
+
+</html>
+

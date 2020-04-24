@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ex3</title>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="reset.css" type="text/css"> 
+   <link rel="stylesheet" href="exercise3.css" type="text/css">  
+
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+	<!-- Bootstrap  JavaScript -->
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
+
+   
+</head>
+
+<!--The horizontal navbar that becomes vertical on small screens-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul>
+      <li id="name"><a  href="#">Melisa Andreea Bogdan</a></li>
+      <li class="selection"><a href="#">Experience</a></li>
+      <li class="selection"><a href="#">Education</a></li>
+      <li class="selection"><a href="#">Skills</a></li>
+  </ul>    
+</nav>
+
+
+<body>
+  <div class="container-fluid">
+    <!--Main Row-->
+    <div class="row"> 
+      <div class="col-sm-2"> <!--LEFT SIDE-->
+		  <div class="divleftbar">
+			  <h3 id="researchhd">Research Interests</h3>
+				<p>Machine Learning</p>
+				<p>Robotics</p>
+				<p>AI</p>
+				<p>Algorithms</p>
+		  </div>
+
+		  <div class="divleftbar">
+				<ul class="nav nav-pills flex-column">
+					<li><a href="#">CV</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Hobbies</a></li>
+					<li><a href="#">Links</a></li>
+				</ul>
+		  </div>
+
+		<div class="divleftbar">
+		  <div class="h2div">
+			  <h2>Top 3 Skills</h2> <!-- YELLOW BLOCKS-->
+		  </div>
+
+		  <!-- MEDIA OBJECTS USED HERE-->
+		  <div id="skills">        
+			<!--IMAGE 1--> 
+					<div class="media">
+						<div class="media-left media-middle">
+							<img src="images/first.png" class="media-object">
+					</div>
+
+					<div class="media-body">
+						<p class="skillRank">HTML - Hypertext Markup Language</p>
+					</div>
+		  </div>                        
+            
+			<!-- MEDIA OBJECTS USED HERE-->
+			<!-- Image 2-->          
+         <div class="media">
+             <div class="media-left media-middle">
+                <img src="images/second.png" class="media-object">   
+             </div>
+             <div class="media-body">
+                <p class="skillRank">CSS - Cascading Style Sheet</p>
+             </div>
+         </div>           
+
+			<!-- MEDIA OBJECTS USED HERE-->
+			<!--Image 3--> 
+			<div class="media">
+				<div class="media-left media-middle">
+					<img src="images/third.png" class="media-object">
+				</div>
+
+				<div class="media-body">
+					<p class="skillRank">SQL - Structured Query Language</p>
+				</div>
+			</div> 	
+        </div>
+
+       </div>
+    </div>   
+
+
+      <div class="col-sm-7"> <!--MIDDLE-->
+			<div class="row"> <!--Nested Row-->
+				  <div class="col-sm-8" > 
+					<h2>About Myself</h2>
+					<p>My name is Melisa Bogdan and I am an EECS student at QMUL. I am a MSci degree and I plan on doing my masters in AI.</p><br>          
+				  </div>
+				<div class="col-sm-4">
+				  <img id="aboutimage" src="images/WhatsApp Image 2020-03-02 at 22.36.16.jpeg"</img>
+				</div>
+			</div>  
+			
+			<div id="table-responsive">
+			   <h2 id="education">Education</h2>
+				  <table class="table">
+					<tr>
+					  <th>2007-2019</th>
+					  <td>High school in Romania</td>
+					</tr>
+					<tr>
+					  <th>2019-onwards</th>
+					  <td>Queen Mary University</td>
+					</tr>        
+				  </table>
+			</div>
+      </div>
+	 
+
+      <div class="col-sm-3"> <!--RIGHT-->
+			  <div class="rightbar">
+				  <aside>
+					  <h2 class="h2div">Hobbies</h2>
+					  <ul class="listright">
+						  <li>Programming</li>
+						  <li>Piano</li>
+						  <li>Reading</li>
+					  </ul>        
+				  </aside>        
+			  </div>
+
+			  <div class="rightbar">
+				  <aside>
+					  <h2 class="h2div">Top 5 Movies</h2>
+					  <ul class="listright">
+						  <li>Avatar</li>
+						  <li>Infinity War</li>
+						  <li>Star Wars</li>
+						  <li>To all the boys I loved</li>
+						  <li>Inferno</li>
+					  </ul>
+				  </aside>
+			  </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,96 @@
+/*nav section*/
+#menu {
+    display: block;
+    background-color: aquamarine;
+}
+
+#menu li, #menu h1{
+    display: inline;
+    list-style-type: none;
+    padding: 1% 2% 1% 2%;
+    font-size: 1.1em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*about me section*/
+#aboutMe, #education {
+    margin: 0% 20% 0% 0%;
+    padding: 2% 0% 12% 30%;
+}
+
+#aboutMe h2, #aboutMe p {
+    text-align: left;
+}
+
+#com {
+    float: right;
+}
+
+hr {
+    margin: 0% 20% 0% 30%;
+    float: bottom;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*Research*/
+#research {
+    position: absolute;
+    top: 5%;
+    padding: 2% 5% 2% 2%;
+    background-color: olivedrab;
+    color: darkolivegreen;
+}
+
+/*CV*/
+#cv {
+    position: absolute;
+    top: 25%;
+    padding: 2% 11% 2% 2%;
+    background-color: lightgray;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*top skills*/
+#skills {
+    position: absolute;
+    top: 45%;
+    padding: 2% 2% 2% 2%;
+    background-color: lightgray;
+}
+
+.tableHead {
+    background-color: greenyellow;
+    padding: 2% 100px 2% 5%;
+}
+
+.tableBody {
+    background-color: white;
+} 
+
+/*Hobbies*/
+#hobbies {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    padding: 2% 2% 2% 2%;
+    background-color: lightgray;
+}
+
+/*Movies*/
+#movies {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    padding: 2% 2% 2% 2%;
+    background-color: lightgray;
+}
