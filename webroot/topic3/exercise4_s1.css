@@ -1,7 +1,7 @@
 ﻿ section, figcaption, article, nav{
 	color:black;
 }
-html, body{
+html, header, body{
   margin: 0 1.0em;
   width: 100%;
   height: 100%;
@@ -13,15 +13,15 @@ html, body{
   width: 100%;
   height: 60%;
   background: yellow;
-  margin-top: 2em;
+ 
 }
 .parentFixed{
   margin-top: 1em;
   width: 1400px;
-  height: 90px;
+  height: 100px;
   background: lightgreen;
   margin: 0 2.0em;
- 
+
   font-size: 150%;
   font-style: normal;
   margin-bottom:1em;

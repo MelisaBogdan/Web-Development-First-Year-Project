@@ -1,0 +1,116 @@
+/* heading stylings */
+
+head {
+    background-color: antiquewhite;
+}
+
+h1, h2 {
+    color: white;
+    margin-bottom: 0%;
+    padding-left: 1%;
+    margin-top: 0%;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 200%;
+}
+
+h2 {
+    padding-top: 0%;
+    padding-bottom: 1%;
+    font-size: 100%;
+}
+
+h3 {
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 0%;
+    font-size: 120%;
+}
+
+
+a.link {
+    color: #5c8fd3;
+    font-size: 100%;
+}
+
+nav {
+    text-align: left;
+    margin: 2% 0% 0%;
+    margin-top: 0%;
+    padding: 1% 0%;
+    color: #5c8fd3;
+}
+
+/* body styling */
+
+figcaption {
+    color: grey;
+}
+
+/* ALl div styling */
+
+div.nav a {
+    font-weight: normal;
+    padding-left: 1%;
+    font-size: largeR;
+    font-family: sans-serif;
+}
+
+div.heading {
+    background-color: #d3a05c;
+    margin-bottom: 0%;
+}
+
+div.nav {
+    background-color: #dbb27b;
+    margin-top: 0%;
+}
+
+div.body {
+    background-color: white;
+    padding: 0.005% 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+div.footer a {
+    font-size: large;
+    color: #207a9e;
+    padding-bottom: 0%;
+    padding-right: 1%;
+}
+
+div.all {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+/* ALl footer stylings */
+footer {
+    background-color: #d3a05c;
+    color: white;
+    padding-left: 2%;
+    padding-bottom: 0.25%;
+}
+
+footer p {
+    margin-top: 0%;
+}
+
+/* General document styling */
+
+html {
+    background-color: #1b3a62;
+}
+
+p {
+    font-size: 100%;
+}

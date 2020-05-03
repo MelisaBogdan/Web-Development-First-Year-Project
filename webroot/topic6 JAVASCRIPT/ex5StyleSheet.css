@@ -1,0 +1,11 @@
+﻿.tr:nth-child(odd) {
+    background: black;
+}
+
+.style_it tr:nth-child(even) {
+    background: #0ff;
+}
+
+.style_it th {
+    background: black;
+}
