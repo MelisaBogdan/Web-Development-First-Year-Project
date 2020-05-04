@@ -1,10 +1,12 @@
 <?php
 	session_start();
-	$user ='root';
-	$pass = '';
-	$db= 'testdb';
-	// connection to XAMPP database
-	$conn= new mysqli('localhost', $user,$pass,$db,"3306") or die("unable to connect oof");
+	$dbhost = getenv("MYSQL_SERVICE_HOST"); 
+	$dbport = getenv("MYSQL_SERVICE_PORT"); 
+	$dbuser = getenv("DATABASE_USER"); 
+	$dbpwd = getenv("DATABASE_PASSWORD"); 
+	$dbname = getenv("DATABASE_NAME"); 
+	// Create connection 
+	$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname) or die("unable to connect oof"); 
 	
 	$title = $_POST['title']; 
 	$date =date('Y-m-d H:i:s');
