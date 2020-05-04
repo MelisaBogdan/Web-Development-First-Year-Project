@@ -8,7 +8,7 @@ session_start();
 	// Create connection 
 	$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname) or die("unable to connect oof"); 
 	
-	$userr = "melisa@gmail.com";
+	$userr = "mel@gmail.com";
 	$passs = "pass";
 	#if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	#{ 
@@ -20,10 +20,10 @@ session_start();
 	#}
 	if ($conn->query($sql) === TRUE) 
 	{               
-		
+		echo "yey";
 	} else {             
 		echo "Error: " . $sql . "<br>" . $conn->error;          
 	}           
 
-	header("Location: myWebsite.html");
+	#header("Location: myWebsite.html");
 ?> 
