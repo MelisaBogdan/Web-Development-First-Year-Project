@@ -5,7 +5,7 @@
 	$dbpwd = getenv("DATABASE_PASSWORD"); 
 	$dbname = getenv("DATABASE_NAME"); 
 	// Create connection 
-	$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname); 
+	$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname) or die("unable to connect oof"); 
 	
 	$userr = "melisa@gmail.com";
 	$passs = "pass";
