@@ -13,7 +13,8 @@
 $query = "SELECT User FROM testt WHERE ID = '1'";
 $username =@mysqli_query($conn, $query);
 $row1 = mysqli_fetch_row($username);
-$Username = $row1[0]; 
+$Username = $row1[0];
+echo "why me";
 echo "$Username"; 
 
 $query = "SELECT Pass FROM testt WHERE ID= '1'";
@@ -23,6 +24,21 @@ $Password = $row2[0];
 echo "$Password"; 
 
 
+#if the user is already logged in:
+if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
+	echo "<script>alert('Already logged in.'); window.location.href='http://localhost/WEB/addPost.html';</script>";
+
+} else if (isset($_POST['USERNAME']) && isset($_POST['PASSWORD'])) #if not empty
+{
+	if ($_POST['USERNAME'] == $Username && $_POST['PASSWORD'] == $Password) 
+			{
+				$_SESSION['id'] = 1;
+				$_SESSION['loged']= true;
+				
+				
+			header("Location: addPost.html"); // redirecting
+			}else echo "<script>alert('Wrong username or password.'); window.location.href='http://localhost/WEB/login.html';</script>";
+}
 
 ?>
 
