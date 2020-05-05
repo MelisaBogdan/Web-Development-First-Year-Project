@@ -77,7 +77,7 @@
 	// Create connection 
 	$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname) or die("unable to connect oof");
 
-	$sql= "SELECT count(ID) AS total FROM post";
+	$sql= "SELECT count(ID) AS total FROM postt";
 	$result=mysqli_query($conn,$sql);
 	$val=mysqli_fetch_assoc($result);
 	$numRows=$val['total']; // the number of total rows so far in the database 
@@ -89,17 +89,17 @@
 	echo '<div class="b"> ';
 	//posting every post we have in the database so far based on an id 
     for ($i = 1; $i <= $numRows; $i++) { 
-		$query = "SELECT title FROM post WHERE ID='$i' ";
+		$query = "SELECT title FROM postt WHERE ID='$i' ";
 		$title =@mysqli_query($conn, $query);
 		$row = mysqli_fetch_row($title);
 		$p = $row[0];
 
-		$query = "SELECT date FROM post WHERE ID='$i'";
+		$query = "SELECT date FROM postt WHERE ID='$i'";
 		$date =@mysqli_query($conn, $query);
 		$row1 = mysqli_fetch_row($date);
 		$pp = $row1[0];
 
-		$query = "SELECT post FROM post WHERE ID='$i'";
+		$query = "SELECT post FROM postt WHERE ID='$i'";
 		$post =@mysqli_query($conn, $query);
 		$row2 = mysqli_fetch_row($post);
 		$ppp = $row2[0];

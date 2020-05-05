@@ -25,7 +25,8 @@ $Password = $row2[0];
 
 #if the user is already logged in:
 if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
-	echo "<script>alert('Already logged in.'); window.location.href='http://localhost/WEB/addPost.html';</script>";
+	echo "<script>alert('Already logged in.');</script>";
+	header("Location: addPost.html")
 
 } else if (isset($_POST['USERNAME']) && isset($_POST['PASSWORD'])) #if not empty
 {
@@ -36,7 +37,11 @@ if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
 				
 				
 			header("Location: addPost.html"); // redirecting
-			}else echo "<script>alert('Wrong username or password.'); window.location.href='http://localhost/WEB/login.html';</script>";
+			}else{
+				echo "<script>alert('Wrong username or password.');</script>";
+				header("Location: login.html");
+			}
+
 }
 
 ?>
