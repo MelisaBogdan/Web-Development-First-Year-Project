@@ -10,13 +10,13 @@
 
 
 #Get info from database
-$query = "SELECT keyUser FROM test3 WHERE ID = '1'";
+$query = "SELECT User FROM testt WHERE ID = '1'";
 $username =@mysqli_query($conn, $query);
 $row1 = mysqli_fetch_row($username);
 $Username = $row1[0]; 
 #echo "$Username"; just testing !
 
-$query = "SELECT keyPass FROM test3 WHERE ID= '1'";
+$query = "SELECT Pass FROM testt WHERE ID= '1'";
 $password =@mysqli_query($conn, $query);
 $row2 = mysqli_fetch_row($password);
 $Password = $row2[0]; 
