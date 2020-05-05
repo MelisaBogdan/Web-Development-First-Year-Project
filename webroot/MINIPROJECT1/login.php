@@ -23,23 +23,19 @@ $Password = $row2[0];
 
 
 
-#if the user is already logged in:
+//if the user is already logged in:
 if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
 	echo "<script>alert('Already logged in.');</script>";
 	header("Location: addPost.html")
 
-} else if (isset($_POST['USERNAME']) && isset($_POST['PASSWORD'])) #if not empty
+	//if not empty
+} else if (isset($_POST['USERNAME']) && isset($_POST['PASSWORD']) ) 
 {
 	if ($_POST['USERNAME'] == $Username && $_POST['PASSWORD'] == $Password) 
 			{
-				#$_SESSION['id'] = 1;
-				$_SESSION['loged']= true;
-				
-				
-			header("Location: addPost.html"); // redirecting
-			}else echo "<script>alert('Wrong username or password.');</script>"; header("Location: login.html");
-			
-
+				$_SESSION['loged']= true;		
+				header("Location: addPost.html"); // redirecting
+			}else echo "<script>alert('Wrong username or password.');</script>"; header("Location: login.html");	
 }
 
 ?>
