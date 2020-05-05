@@ -14,14 +14,13 @@ $query = "SELECT User FROM testt WHERE ID = '1'";
 $username =@mysqli_query($conn, $query);
 $row1 = mysqli_fetch_row($username);
 $Username = $row1[0];
-echo "why me";
-echo "$Username"; 
+
 
 $query = "SELECT Pass FROM testt WHERE ID= '1'";
 $password =@mysqli_query($conn, $query);
 $row2 = mysqli_fetch_row($password);
 $Password = $row2[0]; 
-echo "$Password"; 
+
 
 
 #if the user is already logged in:
