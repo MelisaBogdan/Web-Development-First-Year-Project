@@ -37,10 +37,8 @@ if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
 				
 				
 			header("Location: addPost.html"); // redirecting
-			}else{
-				echo "<script>alert('Wrong username or password.');</script>";
-				header("Location: login.html");
-			}
+			}else echo "<script>alert('Wrong username or password.');</script>"; header("Location: login.html");
+			
 
 }
 
