@@ -11,8 +11,8 @@
 	$title = $_POST['title']; 
 	$date =date('Y-m-d H:i:s');
 	$post = $_POST['text']; 
-	$ID=$_SESSION['id'] ;
-		$sql = "INSERT INTO post(date,title,post,ID) VALUES('$date','$title','$post','$ID')";
+	#$ID=$_POST['id'] ;
+		$sql = "INSERT INTO post(date,title,post) VALUES('$date','$title','$post')";
 	
 		// make sure the database is updated
 		if ($conn->query($sql) === TRUE) 

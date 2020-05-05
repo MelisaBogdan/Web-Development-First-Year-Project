@@ -31,7 +31,7 @@ if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
 {
 	if ($_POST['USERNAME'] == $Username && $_POST['PASSWORD'] == $Password) 
 			{
-				$_SESSION['id'] = 1;
+				#$_SESSION['id'] = 1;
 				$_SESSION['loged']= true;
 				
 				
