@@ -26,7 +26,7 @@ $Password = $row2[0];
 //if the user is already logged in:
 if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
 	echo "<script>alert('Already logged in.');</script>";
-	header("Location: addPost.html")
+	header("Location: addPost.html");
 
 	//if not empty
 } else if( isset($_POST['USERNAME']) && isset($_POST['PASSWORD']) ) 
