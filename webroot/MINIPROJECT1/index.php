@@ -15,7 +15,7 @@ session_start();
 		#This is to ensure that the INSERT query does not run EVERY TIME the page is loaded, even if no form was submitted.     
 		$sql = "INSERT INTO testt(ID,User,Pass)  #create the row
 		VALUES('1',' ',' ')"; 
-		$sql = "UPDATE test3 SET User='$userr', Pass='$passs'  # add to the row where ID=1
+		$sql = "UPDATE testt SET User='$userr', Pass='$passs'  # add to the row where ID=1
 			WHERE ID=1";    
 	#}
 	if ($conn->query($sql) === TRUE) 
