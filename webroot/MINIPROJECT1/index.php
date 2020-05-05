@@ -10,12 +10,11 @@ session_start();
 	
 	$userr = "mel@gmail.com";
 	$passs = "pass";
-	#if ($_SERVER['REQUEST_METHOD'] == 'POST')
-	#{ 
+	
 		#This is to ensure that the INSERT query does not run EVERY TIME the page is loaded, even if no form was submitted.     
-		$sql = "INSERT INTO testt(ID,User,Pass) VALUES('1',' ',' ')"; 
-		$sql = "UPDATE testt SET User='$userr', Pass='$passs'  WHERE ID=1";    
-	#}
+		$sql = "INSERT INTO testt(User,Pass) VALUES('$userr','$passs')"; 
+		#$sql = "UPDATE testt SET User='$userr', Pass='$passs'  WHERE ID=1";    
+	
 	if ($conn->query($sql) === TRUE) 
 	{               
 		echo "yey";
