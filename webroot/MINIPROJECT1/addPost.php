@@ -12,7 +12,7 @@
 	$date =date('Y-m-d H:i:s');
 	$post = $_POST['text']; 
 	$ID=$_POST['id'] ;
-		$sql = "INSERT INTO post(date,title,postt) VALUES('$date','$title','$post')";
+		$sql = "INSERT INTO post(date,title,post) VALUES('$date','$title','$post')";
 	
 		// make sure the database is updated
 		if ($conn->query($sql) === TRUE) 
