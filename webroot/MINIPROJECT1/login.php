@@ -29,13 +29,14 @@ if( isset($_SESSION['loged']) && $_SESSION['loged']==true) {
 	header("Location: addPost.html")
 
 	//if not empty
-} else if (isset($_POST['USERNAME']) && isset($_POST['PASSWORD']) ) 
+} else if( isset($_POST['USERNAME']) && isset($_POST['PASSWORD']) ) 
 {
 	if ($_POST['USERNAME'] == $Username && $_POST['PASSWORD'] == $Password) 
 			{
 				$_SESSION['loged']= true;		
 				header("Location: addPost.html"); // redirecting
-			}else echo "<script>alert('Wrong username or password.');</script>"; header("Location: login.html");	
+			}else echo "<script>alert('Wrong username or password.');</script>";
+	header("Location: login.html");	
 }
 
 ?>
