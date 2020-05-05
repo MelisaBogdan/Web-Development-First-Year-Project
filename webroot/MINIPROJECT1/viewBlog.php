@@ -89,17 +89,17 @@
 	echo '<div class="b"> ';
 	//posting every post we have in the database so far based on an id 
     for ($i = 1; $i <= $numRows; $i++) { 
-		$query = "SELECT title FROM testdb.post WHERE ID='$i' ";
+		$query = "SELECT title FROM post WHERE ID='$i' ";
 		$title =@mysqli_query($conn, $query);
 		$row = mysqli_fetch_row($title);
 		$p = $row[0];
 
-		$query = "SELECT date FROM testdb.post WHERE ID='$i'";
+		$query = "SELECT date FROM post WHERE ID='$i'";
 		$date =@mysqli_query($conn, $query);
 		$row1 = mysqli_fetch_row($date);
 		$pp = $row1[0];
 
-		$query = "SELECT post FROM testdb.post WHERE ID='$i'";
+		$query = "SELECT post FROM post WHERE ID='$i'";
 		$post =@mysqli_query($conn, $query);
 		$row2 = mysqli_fetch_row($post);
 		$ppp = $row2[0];
@@ -113,8 +113,7 @@
 		echo "<br>";echo "<br>";echo "<br>";echo "<br>";echo "<br>";
 	 echo "<hr>";
 	  }
-	
-	#if already logged in
+
 	
 
 ?>
