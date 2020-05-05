@@ -12,8 +12,7 @@
 	$date =date('Y-m-d H:i:s');
 	$post = $_POST['text']; 
 	$ID=$_SESSION['id'] ;
-		$sql = "INSERT INTO post(date,title,post,ID) 
-		VALUES('$date','$title','$post','$ID')";
+		$sql = "INSERT INTO post(date,title,post,ID) VALUES('$date','$title','$post','$ID')";
 	
 		// make sure the database is updated
 		if ($conn->query($sql) === TRUE) 

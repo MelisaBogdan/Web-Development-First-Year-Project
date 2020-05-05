@@ -23,5 +23,5 @@ session_start();
 		echo "Error: " . $sql . "<br>" . $conn->error;          
 	}           
 
-	#header("Location: myWebsite.html");
+	header("Location: myWebsite.html");
 ?> 
