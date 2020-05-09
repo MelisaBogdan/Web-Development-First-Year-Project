@@ -98,7 +98,7 @@
 			$comment=$row['comment'];
 			$month=$row['month'];
 
-		if($month == '02'){  // the wanted month 02=February
+		if($month == '2'){  // the wanted month 02=February
 			$ct=$ct+1;
 			echo '<div class="a"> ';
 			echo "$pp";
