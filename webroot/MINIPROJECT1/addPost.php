@@ -17,8 +17,8 @@
 		// make sure the database is updated
 		if ($conn->query($sql) === TRUE) 
 		{               
-			echo "<script>alert('You succesfully added a post.');</script>";
-			header("Location: viewBlog.php");
+			//echo "<script>alert('You succesfully added a post.');</script>";
+			header("Location: viewBlog.php" . "You succesfully added a post." . );
 		} else {             
 			echo "Error: " . $sql . "<br>" . $conn->error;          
 		}        
