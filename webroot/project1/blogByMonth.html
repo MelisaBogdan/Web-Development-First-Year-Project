@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--- style for both buttons -->
+	<style> 
+		.menu {
+			position: relative;
+			display: inline-block;
+		}
+
+		html {
+			background-color: #FFF0F5;
+		}
+		.button {
+			  background-color: yellow;
+			  color: Black;
+			  padding: 16px;
+			  font-size: 16px;
+			  margin-left:200px;
+			  cursor: pointer;
+			}
+		.body {     /*styling the choices in menu */
+			  display: none;   /*stops the choices display unless the cursor points at the button*/
+			  position: absolute;
+			  background-color: #FFF8DC;
+			  min-width: 100px;
+			  margin-left:180px;
+			}
+		.body a {				/*styling choices in <a> tags */
+			  color: black;
+			  padding: 8px 8px;
+			  text-decoration: none;  /*  these choices are actually links so we don't want them underlined  */
+			  display: block;
+			}
+		.menu:hover .body {
+			  display: block;
+			}
+
+	</style>
+  </head>
+	<body>
+
+	<p><h1>Choose the month of the posts you want to display.</h></p>
+	
+	<div class="menu">
+		  <button class="button">Dropdown</button>
+		  <div class="body">
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/January.php" >January</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/February.php">February</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/March.php">March</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/April.php">April</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/May.php">May</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/June.php">June</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/July.php">July</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/August.php">August</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/September.php">September</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/October.php">October</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/November.php">November</a>
+			  <a href="http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/December.php">December</a>
+		  </div>
+	</div>
+
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--- style for both buttons -->
+	<style> 
+		.b {
+		  background-color: #8FBC8F;
+		  border: groove;
+		  color: white;
+		  padding: 15px 30px;
+		  text-align: center;
+		  font-size: 20px;
+		  margin: 2px 2px;
+		  cursor: pointer;
+		}
+
+		html {
+			background-color: #FFE4B5;
+		}
+	</style>
+  </head>
+
+	<body>
+		<p><h1>What do you want to do?</h></p>
+		<br>
+		<form  action="addPost.html" method="post" enctype="multipart/form-data"> <!-- button redirecting to posting page -->
+			<input type="Submit" class="b"  value="    Post blogs     ">
+		</form>
+		<br>
+		<form  action="edit.php" method="post" enctype="multipart/form-data"> <!-- button redirecting to editing page -->
+			<input type="Submit" class="b"  value="Add comments  ">
+		</form>
+		<br>
+		<form  action="menu2.html" method="post" enctype="multipart/form-data"> <!-- button redirecting to pdeleteing posts page -->
+			<input type="Submit" class="b"  value="     View posts    ">
+		</form>
+		<br>
+	</body>
+</html>

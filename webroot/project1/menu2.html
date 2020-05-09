@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--- style for both buttons -->
+	<style> 
+		.b {
+		  background-color: #8FBC8F;
+		  border: groove;
+		  color: white;
+		  padding: 15px 30px;
+		  text-align: center;
+		  font-size: 20px;
+		  margin: 2px 2px;
+		  cursor: pointer;
+		}
+
+		html {
+			background-color: #FFF0F5;
+		}
+		
+
+	</style>
+  </head>
+
+	<body>
+
+	<p><h1>How do you want to see the blog?</h></p>
+	<br>
+	<form  action="viewBlog.php" method="post" enctype="multipart/form-data"> <!-- button redirecting to posting page -->
+		<input type="Submit" class="b"  value="      All posts      ">
+	</form>
+	<br>
+	
+	<form  action="blogByMonth.html" method="post" enctype="multipart/form-data"> <!-- button redirecting to pdeleteing posts page -->
+		<input type="Submit" class="b"  value="Posts by month ">
+	</form>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <meta charset="UTF-8">
+	 <title>LOGIN</title>
+
+	<style type="text/css">
+
+	body{
+		background-color:#FFA07A;
+	}
+
+	 p {
+		color: white; 
+	}
+
+	img{
+	   position: absolute;
+	   padding: 5px;
+	   width: 400px;
+	   height: 200px;
+	   background-color: #008080;
+	   margin-left:-7%;
+	   height: 300px;
+
+	html {
+		font-family: Copperplate Gothic Bold;
+	}
+
+	h3 {
+			font-size: 30px;
+			text-align: center;
+	}
+
+	.logout {
+	  background-color: #F0FFFF;
+	  border-radius: 25px;
+	  padding: 13px 13px;
+	  text-align: center;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin-left:-10px;
+	}
+
+	.login {
+	  background-color: #F0FFFF;
+	  border-radius: 25px;
+	  padding: 14px 14px;
+	  text-align: center;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin-left:130px;
+	}
+
+	#blogPosition {
+			position: center;
+			top: 10%;
+			margin-top: 150px;
+			width: 100%;
+		
+	}
+
+	#s {
+	  margin: auto;
+	  width: 200px;
+	  height: 100px;
+	}
+	</style>
+
+</head>
+
+<body>
+
+<div id="blogPosition">
+
+<!-- BUTTONS AND TEXT FIELDS -->
+<h3>Log in to post a blog</h3>
+<form id="s" action="login.php" method="post" enctype="multipart/form-data">
+
+		EMAIL: <input type="email" name="USERNAME" /> 
+	<br>
+		PASSWORD: <input type="password" name="PASSWORD" /> 
+	<br><br>
+
+	<div class="login" >
+		<input type="submit" value="Login" name="Submit" />
+	</div>
+		<br><br><br><br><br>
+	<IMG src="cat.gif">
+
+</form>
+
+<form id="shape" action="logout.php" method="post" enctype="multipart/form-data">
+	<div class="logout" >
+		<input type="submit" action="logout.php" value="Logout" name="Submit" />
+		<br>
+	</div>
+</form>
+
+</body>
+
+</html>
