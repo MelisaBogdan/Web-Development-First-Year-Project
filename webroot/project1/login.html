@@ -1,18 +1,34 @@
 <!DOCTYPE html>
+
  <html>
+
  <head>
+
 	 <meta charset="UTF-8">
+
 	 <title>LOGIN</title>
+
+
 
 	<style type="text/css">
 
+
+
 	body{
+
 		background-color:#FFA07A;
+
 	}
 
+
+
 	 p {
+
 		color: white; 
+
 	}
+
+
 
 	img{
 	   position: absolute;
@@ -22,11 +38,11 @@
 	   background-color: #008080;
 	   margin-left:-7%;
 	   height: 300px;
+	}
 
 	html {
 		font-family: Copperplate Gothic Bold;
 	}
-
 	h3 {
 			font-size: 30px;
 			text-align: center;
@@ -42,6 +58,8 @@
 	  margin-left:-10px;
 	}
 
+
+
 	.login {
 	  background-color: #F0FFFF;
 	  border-radius: 25px;
@@ -51,52 +69,55 @@
 	  font-size: 16px;
 	  margin-left:130px;
 	}
-
 	#blogPosition {
 			position: center;
 			top: 10%;
 			margin-top: 150px;
 			width: 100%;
-		
 	}
 
-	#s {
+	#ss {
 	  margin: auto;
 	  width: 200px;
 	  height: 100px;
 	}
-	</style>
+
+</style>
 
 </head>
 
 <body>
 
 <div id="blogPosition">
+		<h3>Log in to post a blog</h3>
+		<form id="ss" action="login.php" method="post" enctype="multipart/form-data">
 
-<!-- BUTTONS AND TEXT FIELDS -->
-<h3>Log in to post a blog</h3>
-<form id="s" action="login.php" method="post" enctype="multipart/form-data">
+				EMAIL: <input type="email" name="USERNAME" /> 
 
-		EMAIL: <input type="email" name="USERNAME" /> 
-	<br>
-		PASSWORD: <input type="password" name="PASSWORD" /> 
-	<br><br>
+			<br>
 
-	<div class="login" >
-		<input type="submit" value="Login" name="Submit" />
-	</div>
-		<br><br><br><br><br>
-	<IMG src="cat.gif">
+				PASSWORD: <input type="password" name="PASSWORD" /> 
 
-</form>
+			<br><br>
 
-<form id="s" action="logout.php" method="post" enctype="multipart/form-data">
-	<div class="logout" >
-		<input type="submit" action="logout.php" value="Logout" name="Submit" />
-		<br>
-	</div>
-</form>
+			<div class="login" >
 
+				<input type="submit" value="Login" name="Submit" />
+
+			</div>
+		    <br><br><br><br><br>
+			<IMG src="cat.gif">
+		</form>
+
+		<form id="ss" action="logout.php" method="post" enctype="multipart/form-data">
+			<div class="logout" >
+				<input type="submit" action="logout.php" value="Logout" name="Submit" />
+				<br>
+			</div>
+		</form>
+</div>
 </body>
+
+
 
 </html>
