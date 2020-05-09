@@ -23,13 +23,13 @@ $Password = $row2[0];
 
 #Get info from database for admin
 $query = "SELECT user FROM admin WHERE ID = '1'";
-$username =@mysqli_query($conn, $query);
-$row3 = mysqli_fetch_row($username);
+$u =@mysqli_query($conn, $query);
+$row3 = mysqli_fetch_row($u);
 $user = $row3[0]; 
 
 $query = "SELECT pass FROM admin WHERE ID= '1'";
-$password =@mysqli_query($conn, $query);
-$row4 = mysqli_fetch_row($password);
+$p =@mysqli_query($conn, $query);
+$row4 = mysqli_fetch_row($p);
 $pass = $row4[0]; 
 
 
