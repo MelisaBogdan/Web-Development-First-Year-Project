@@ -22,7 +22,7 @@
 			echo "Erro: " . $sql . "<br>" . $conn->error;          
 		}         
 	//insert in database admin details
-		$sqll = "INSERT INTO admin(user,pass) VALUES('$adminUser','$adminPass')"; 	   
+		$sql = "INSERT INTO admin(user,pass) VALUES('$adminUser','$adminPass')"; 	   
 	if ($conn->query($sql) === TRUE) 
 	{               
 		echo "yeyy";

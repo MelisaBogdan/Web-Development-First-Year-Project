@@ -44,12 +44,10 @@
 		}
 	}
 		
-	
-	
-	
+
 	  if ($conn->query($sql) === TRUE) // making sure the database is updated
 		{               
-			echo "<script>alert('You succesfully deleted a post.'); window.location.href='http://localhost/WEB/viewBlog.php';</script>";
+			echo "<script>alert('You succesfully deleted a post.'); window.location.href='http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/viewBlog.php';</script>";
 		} else {             
 			echo "Error: " . $sql . "<br>" . $conn->error;          
 		}        
