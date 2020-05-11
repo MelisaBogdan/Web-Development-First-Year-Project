@@ -35,22 +35,26 @@ function logout(){
 //	window.location.assign("preview.php");
 //}
  function preventDefault() {
+	  var check= document.forms["blog"]["Submit"].value;
 	  var fieldTitle = document.forms["blog"]["title"].value;
 	  var fieldPost = document.forms["blog"]["text"].value;
-	  // when both fields are empty
-	  if( (fieldTitle== "" || fieldTitle == null) && (fieldPost== "" || fieldPost == null) ){
-		alert("Both fields are missing.");
-		return false;
-	  }
-	  //when the title is empty
-	  if (fieldTitle== "" || fieldTitle == null) {
-		alert("The TITLE filed is missing.");
-		return false; // exit function
-	  }
-	  //when the post text is empty
-	  if (fieldPost== "" || fieldPost == null) {
-		alert("The BODY filed is missing.");
-		return false;
+
+	  check.addEventListener("click", function(event){
+			  // when both fields are empty
+			  if( (fieldTitle== "" || fieldTitle == null) && (fieldPost== "" || fieldPost == null) ){
+				  alert("Both fields are missing.");
+				 return event.preventDefault();
+			  }else if (fieldTitle== "" || fieldTitle == null) {
+			  //when the title is empty
+					alert("The TITLE filed is missing.");
+					return event.preventDefault();
+			  }else{
+				  //when the post text is empty
+				  if (fieldPost== "" || fieldPost == null) {
+					alert("The BODY filed is missing.");
+				return	event.preventDefault();
+			  }
+		});
   }
   
  
