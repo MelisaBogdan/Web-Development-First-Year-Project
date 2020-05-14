@@ -1,33 +1,4 @@
 
-// function clears out everything inside the text and title box
-function clearAll() {
-	var yesno=confirm("Do you want to clear everything?");
-	if(yesno==true) {
-		document.getElementById("title").value = "";
-		document.getElementById("post").value = " ";
-     }
-}
-function goToBlog() { 
-   window.location.assign("viewBlog.php");
-}
-function ff() { 
-   window.location.assign("login.html");
-}
-function goToMenu() { 
-   window.location.assign("centralMenu.php");
-}
-function redirectMenuAdmin(){ 
-	window.location.assign("menu.html");
-}
-function redirectMenuUser(){ 
-	window.location.assign("menuUser.html");
-}
-function redirect(){ 
-	window.location.assign("addPost.html");
-}
-function goBackToWebsite(){
-	window.location.assign("myWebsite.html");
-}
 
 // function clears out everything inside the text and title box
 function clearAll() {
@@ -93,7 +64,3 @@ function logout(){
 	window.location.assign("logout.php");
 }
 
- 
-  
- 
-}
