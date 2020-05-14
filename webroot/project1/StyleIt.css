@@ -1,7 +1,6 @@
-﻿/*nav section*/
-#menu {
+﻿#menu {
     display: block;
-    background-color: #663399;
+    background-color: #DEB887;
 }
 
 #menu li, #menu h1{
@@ -19,7 +18,7 @@ body {
 #aboutMe {
     margin: 0% 0% 0% 0%;
     padding: 0% 27% 35% 29.5%;
-	background-color:#FFF0F5 ; /*pale pink middle*/
+	background-color:#FFF0F5 ; /*pale purple middle*/
 	border-radius: 25px;
 	
 }
@@ -91,7 +90,7 @@ li {
 
 /*Research*/
 #research {
-	margin: 0% 0% 0% 1%;
+	margin: 0% 5% 0% 1%;
     position: absolute;
     top: 5%;
     padding: 2% 5% 2% 2%;
@@ -99,7 +98,16 @@ li {
     color: #DB7093;
 }
 
-/*CV*/
+#experience {
+	margin-left:78%;
+	margin-right:60px;
+	margin-top:-23%;
+    padding: 2% 5% 2% 2%;
+    background-color: yellow;
+    color: #DB7093;
+}
+
+/*contact details and links*/
 #cv {
 	margin: 0% 5% 0% 1%;
     position: absolute;
@@ -115,7 +123,7 @@ a {
 
 /*top skills*/
 #skills {
-	margin: 0% 5% 0% 3%;
+	margin: 0% 5% 0% 1%;
     position: absolute;
     top: 50%;
     padding: 0% 0% 1% 0%;
@@ -139,16 +147,16 @@ a {
 	margin: 1% 5% 0% 5%;
     position: absolute;
     top: 5%;
-    left: 79%;
+    left: 75%;
 	bottom: 82%;
-    padding: 1% 0% 0% 0%;
+    
     background-color: #4682B4;
 }
 
 /*Working experience*/
 #work {
     position: absolute;
-    top: 23.5%;
+    top: 25.5%;
     left: 79%;
     padding: 1% 1% 1% 1%;
     background-color: #DB7093;
