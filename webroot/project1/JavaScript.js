@@ -12,8 +12,8 @@ function clearAll() {
 function prevent() {
 	//  var c= document.getElementById("Submit");
 	  var fieldTitle = document.getElementById("title").value;
-	  var fieldPost = document.getElementById("text").value;
-	  alert("fieldTitle and fieldPost");
+	  var fieldPost = document.getElementById("post").value;
+	  
 	  document.getElementById("blog").onsubmit= function(event){
 				  // when both fields are empty
 				  if( (fieldTitle== "" || fieldTitle == null) && (fieldPost== "" || fieldPost == null) ){
@@ -27,7 +27,7 @@ function prevent() {
 					  //when the post text is empty
 					  if (fieldPost== "" || fieldPost == null) {
 						alert("The BODY filed is missing.");
-						return	e.preventDefault();
+						return	event.preventDefault();
 					  }
 				  }
 			}

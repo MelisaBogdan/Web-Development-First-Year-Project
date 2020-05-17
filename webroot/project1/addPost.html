@@ -71,7 +71,7 @@
 
 <!-- text fields and buttons -->
 <table>
-	<form id="blog" name ="blog" method="post" action="addPost.php" onsubmit="return prevent()">
+	<form id="blog" name ="blog" method="post" action="addPost.php" onsubmit="return prevent();">
 		<tr>
 			<td>Title</td>
 			<td>
@@ -85,7 +85,7 @@
 			</td>
 		</tr>
 		<td> <td>
-			<input  id="Submit" type="submit" value="ADD POST" name="Submit">
+			<input  id="Submit" type="submit" value="ADD POST" name="Submit" onclick="prevent()">
 			<input type="button" name="clear" value="Clear" onclick="clearAll()">	
 		<!-- when you don't want to add a post but add comments or view posts-->
 			<input type="button" value="SKIP" name="Submit" onclick="goToBlog()">
