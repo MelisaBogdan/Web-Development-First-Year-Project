@@ -11,7 +11,7 @@
 	$title = $_POST['title']; 
 	$datee =date('Y-m-d H:i:s');
 	$post = $_POST['text']; 
-	$m=3;
+	$m=date('m');
 	//insert the post data in table p
 		$sql = "INSERT INTO p(date,title,post,comment,month) VALUES('$datee','$title','$post', ' ', $m)";
 
