@@ -64,6 +64,8 @@ if( isset($_SESSION['loged']) && $_SESSION['loged']==true ) {
 						echo "Error: " . $sql . "<br>" . $conn->error;          
 					}      
 				header("Location: addPost.html"); 
+			}else if($_POST['USERNAME'] == '' && $_POST['PASSWORD'] ==''){ // if login details are missing
+				echo "<script>alert('Login details are missing.'); window.location.href='http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/login.html';</script>";
 			}else echo "<script>alert('Wrong username or password.'); window.location.href='http://cakephp-mysql-persistent-melisaecs417.bde1.qmul-eecs.openshiftapps.com/project1/login.html';</script>";
 } 
 
